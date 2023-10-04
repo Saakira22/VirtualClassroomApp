@@ -4,11 +4,15 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+
+		//An instance of VirtualClassroomManager is created to access the functionalities of virtual classroom.
 		VirtualClassroomManager manager = new VirtualClassroomManager();
 		Scanner scanner = new Scanner(System.in);
 
 		while (true) {
-			System.out.println("\nVirtual Classroom Manager Menu:");
+			System.out.println("*******************************");
+			System.out.println("Virtual Classroom Manager Menu:");
+			System.out.println("*******************************");
 			System.out.println("1. Add Classroom");
 			System.out.println("2. Add Student");
 			System.out.println("3. Schedule Assignment");
@@ -18,10 +22,14 @@ public class Main {
 			System.out.println("7. Remove Classroom");
 			System.out.println("8. Quit");
 
-			System.out.print("Enter your choice: ");
+			System.out.println("------------------");
+			System.out.println("Enter your choice: ");
 			int choice = scanner.nextInt();
-			scanner.nextLine(); // Consume the newline character
+			System.out.println("------------------");
 
+			// Consume the newline character
+			scanner.nextLine(); 
+			
 			switch (choice) {
 			case 1:
 				System.out.print("Enter the classroom name: ");
